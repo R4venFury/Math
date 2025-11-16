@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math - Simulador de Crecimiento Personalizado</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="PiG.css">
+  <script src="PiG.js"></script>
+</head>
+<body>
+  <header>
+    <a href="#" class="brand">
+      <div class="logo">M</div>
+      <span>Math</span>
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="navMenu">
+      <a href="PendienteRecta-Grafica.html">Gráfica</a>
+      <a href="PendienteRecta-Procedimiento.html">Procesos</a>
+      <a href="../index.html">Regresar</a>
+    </nav>
+  </header>  <main>
+    <div class="card">
+      <h1> Simulador de Crecimiento </h1>
+      <p>Modelo general: <b>f(t) = A · e^(k·t)</b></p>
+      <p>Puedes ajustar los parámetros del modelo para personalizar la simulación.</p><div>
+    <label>Valor inicial (A):</label>
+    <input type="number" id="A" value="1000" min="1"><br>
+    <label>Tasa de crecimiento (k):</label>
+    <input type="number" id="k" value="0.2" step="0.01"><br>
+    <label>Meses a simular:</label>
+    <input type="number" id="meses" value="12" min="1"><br>
+    <button onclick="graficar()">Actualizar</button>
+  </div>
+
+  <canvas id="grafica"></canvas>
+
+  <h3> Tabla de Resultados </h3>
+  <table id="tabla">
+    <thead>
+      <tr><th>Mes</th><th>Usuarios estimados</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <p>© 2025 Math | Todos los derechos reservados</p>
+    <p>Soporte Técnico: VR_</p>
+      <a href="mailto:duraven68@gmail.com?subject=Contacto&body=Hola,%20quiero%20saber%20más%20del%20proyecto." class="btn btn-primary">
+        Enviar correo
+      </a>
+  </footer>
+</div>
+
+  </main>  
+  
+</body>
+</html>

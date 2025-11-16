@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math - Graficador de funciones</title>
+<link rel="stylesheet" href="FiG.css">
+<script src="FiG.js"></script>
+</head>
+<body>
+  <header>
+    <a href="#" class="brand">
+      <div class="logo">M</div>
+      <span>Math</span>
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="navMenu">
+      <a href="Funciones-Grafica.html">Gráfica</a>
+      <a href="Funciones-Procedimiento.html">Procesos</a>
+      <a href="../index.html">Regresar</a>
+    </nav>
+  </header>  
+  <main>
+    <div class="card">
+      <h1> Graficador de funciones </h1>
+      <p>Escribe una o varias funciones separadas por comas.<br>
+      Ejemplo: <b>sin(x), cos(x), x^2</b></p><input type="text" id="funcion" placeholder="Ejemplo: sin(x), cos(x) + x/2, x^2">
+  <br>
+  <button onclick="graficar()">Graficar</button>
+
+  <div id="resultado"></div>
+  <div id="grafica"></div>
+
+  <div class="guia">
+    <h3>Cómo escribir funciones:</h3>
+    <ul>
+      <li><b>x^2</b> → potencia</li>
+      <li><b>sin(x)</b>, <b>cos(x)</b>, <b>tan(x)</b></li>
+      <li><b>sqrt(x)</b> → raíz cuadrada</li>
+      <li><b>exp(x)</b> → e<sup>x</sup></li>
+      <li><b>log(x)</b> → logaritmo natural</li>
+      <li><b>abs(x)</b> → valor absoluto</li>
+      <li><b>pi</b>, <b>e</b></li>
+      <li>Usa siempre <b>*</b> para multiplicar (ej. <b>3*x</b>, no <b>3x</b>)</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <p>© 2025 Math | Todos los derechos reservados</p>
+    <p>Soporte Técnico: VR_</p>
+      <a href="mailto:duraven68@gmail.com?subject=Contacto&body=Hola,%20quiero%20saber%20más%20del%20proyecto." class="btn btn-primary">
+        Enviar correo
+      </a>
+  </footer>
+</div>
+
+  </main>
+<script src="https://cdn.jsdelivr.net/npm/mathjs@11.8.0/lib/browser/math.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+
+</body>
+</html>
